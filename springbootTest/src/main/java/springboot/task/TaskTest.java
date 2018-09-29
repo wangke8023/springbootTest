@@ -7,7 +7,7 @@ import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Component;
 
 
-@Component
+//@Component
 @Async
 public class TaskTest {
 	private static final Logger logger = LoggerFactory.getLogger(TaskTest.class);
