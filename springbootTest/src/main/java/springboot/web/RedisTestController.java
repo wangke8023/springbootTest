@@ -1,5 +1,7 @@
 package springboot.web;
 
+import java.util.Set;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -32,9 +34,15 @@ public class RedisTestController {
 		return "ok";
 	}
 	@RequestMapping("/redisTest4")
-	public Object test4(String key,String value,Double scoure){
+	public Object test4(String key,Double start,Double end,String orderBy){
 		logger.info("/redisTest4调入成功");
-		redisUtil.setMembers(key);
-		return "ok";
+		Set<Object> rangeByScore = redisUtil.rangeByScore(key, start, end,orderBy);
+		return rangeByScore;
+	}
+	@RequestMapping("/redisTest5")
+	public Object test5(String key,long start,long end,String orderBy){
+		logger.info("/redisTest5调入成功");
+		Set<Object> rangeByScore = redisUtil.zRevRange(key, start, end,orderBy);
+		return rangeByScore;
 	}
 }

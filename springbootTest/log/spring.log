@@ -72,3 +72,625 @@
 2018-09-29 11:05:56.361  INFO 152664 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
 2018-09-29 11:05:56.435  INFO 152664 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
 2018-09-29 11:05:56.439  INFO 152664 --- [main] springboot.App                           : Started App in 4.371 seconds (JVM running for 4.675)
+2018-09-29 11:14:45.539  INFO 19772 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 19772 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 11:14:45.541  INFO 19772 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 11:14:45.592  INFO 19772 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7780fc02: startup date [Sat Sep 29 11:14:45 CST 2018]; root of context hierarchy
+2018-09-29 11:14:46.315  INFO 19772 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 11:14:47.280  INFO 19772 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 11:14:47.289  INFO 19772 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 11:14:47.290  INFO 19772 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 11:14:47.394  INFO 19772 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 11:14:47.394  INFO 19772 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1802 ms
+2018-09-29 11:14:47.682  INFO 19772 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 11:14:47.683  INFO 19772 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 11:14:47.686  INFO 19772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 11:14:47.686  INFO 19772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 11:14:47.687  INFO 19772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 11:14:47.687  INFO 19772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 11:14:47.687  INFO 19772 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 11:14:48.170  INFO 19772 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 11:14:48.173  INFO 19772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 11:14:48.179  INFO 19772 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 11:14:48.626  INFO 19772 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7780fc02: startup date [Sat Sep 29 11:14:45 CST 2018]; root of context hierarchy
+2018-09-29 11:14:48.680  INFO 19772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 11:14:48.681  INFO 19772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 11:14:48.681  INFO 19772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 11:14:48.681  INFO 19772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 11:14:48.682  INFO 19772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.userController.queryUser(java.lang.String)
+2018-09-29 11:14:48.682  INFO 19772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.userController.queryUserObj(java.lang.String)
+2018-09-29 11:14:48.685  INFO 19772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 11:14:48.685  INFO 19772 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 11:14:48.714  INFO 19772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:14:48.714  INFO 19772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:14:48.753  INFO 19772 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:14:49.155  WARN 19772 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 11:14:49.335  INFO 19772 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 11:14:49.336  INFO 19772 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 11:14:49.339  INFO 19772 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 11:14:49.511  INFO 19772 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 11:14:49.515  INFO 19772 --- [main] springboot.App                           : Started App in 4.431 seconds (JVM running for 4.728)
+2018-09-29 11:14:57.930  INFO 19772 --- [http-nio-8004-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-29 11:14:57.930  INFO 19772 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-29 11:14:57.956  INFO 19772 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-09-29 11:14:57.999  INFO 19772 --- [http-nio-8004-exec-1] springboot.web.RedisTestController       : /redisTest2调入成功
+2018-09-29 11:14:59.383  INFO 19772 --- [http-nio-8004-exec-9] springboot.web.RedisTestController       : /redisTest2调入成功
+2018-09-29 11:15:00.000  INFO 19772 --- [http-nio-8004-exec-4] springboot.web.RedisTestController       : /redisTest2调入成功
+2018-09-29 11:15:00.255  INFO 19772 --- [http-nio-8004-exec-2] springboot.web.RedisTestController       : /redisTest2调入成功
+2018-09-29 11:15:00.454  INFO 19772 --- [http-nio-8004-exec-10] springboot.web.RedisTestController       : /redisTest2调入成功
+2018-09-29 11:25:45.667  INFO 67420 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 67420 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 11:25:45.669  INFO 67420 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 11:25:45.712  INFO 67420 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64721088: startup date [Sat Sep 29 11:25:45 CST 2018]; root of context hierarchy
+2018-09-29 11:25:46.339  INFO 67420 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 11:25:47.376  INFO 67420 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 11:25:47.386  INFO 67420 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 11:25:47.387  INFO 67420 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 11:25:47.487  INFO 67420 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 11:25:47.488  INFO 67420 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1777 ms
+2018-09-29 11:25:47.787  INFO 67420 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 11:25:47.788  INFO 67420 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 11:25:47.790  INFO 67420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 11:25:47.791  INFO 67420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 11:25:47.791  INFO 67420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 11:25:47.791  INFO 67420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 11:25:47.792  INFO 67420 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 11:25:48.285  INFO 67420 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 11:25:48.287  INFO 67420 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 11:25:48.293  INFO 67420 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 11:25:48.638  INFO 67420 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@64721088: startup date [Sat Sep 29 11:25:45 CST 2018]; root of context hierarchy
+2018-09-29 11:25:48.697  INFO 67420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 11:25:48.698  INFO 67420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 11:25:48.699  INFO 67420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 11:25:48.699  INFO 67420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 11:25:48.700  INFO 67420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.userController.queryUser(java.lang.String)
+2018-09-29 11:25:48.700  INFO 67420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.userController.queryUserObj(java.lang.String)
+2018-09-29 11:25:48.702  INFO 67420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 11:25:48.704  INFO 67420 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 11:25:48.740  INFO 67420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:25:48.741  INFO 67420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:25:48.785  INFO 67420 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:25:49.299  WARN 67420 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 11:25:49.508  INFO 67420 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 11:25:49.509  INFO 67420 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 11:25:49.513  INFO 67420 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 11:25:49.586  INFO 67420 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 11:25:49.591  INFO 67420 --- [main] springboot.App                           : Started App in 4.324 seconds (JVM running for 4.571)
+2018-09-29 11:26:23.709  INFO 67420 --- [http-nio-8004-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-29 11:26:23.709  INFO 67420 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-29 11:26:23.735  INFO 67420 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-09-29 11:26:23.778  INFO 67420 --- [http-nio-8004-exec-1] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:34:50.971  INFO 94100 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 94100 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 11:34:50.973  INFO 94100 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 11:34:51.031  INFO 94100 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a690707: startup date [Sat Sep 29 11:34:51 CST 2018]; root of context hierarchy
+2018-09-29 11:34:51.691  INFO 94100 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 11:34:52.624  INFO 94100 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 11:34:52.633  INFO 94100 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 11:34:52.634  INFO 94100 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 11:34:52.750  INFO 94100 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 11:34:52.751  INFO 94100 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1720 ms
+2018-09-29 11:34:53.039  INFO 94100 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 11:34:53.041  INFO 94100 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 11:34:53.043  INFO 94100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 11:34:53.044  INFO 94100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 11:34:53.044  INFO 94100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 11:34:53.044  INFO 94100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 11:34:53.044  INFO 94100 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 11:34:53.525  INFO 94100 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 11:34:53.527  INFO 94100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 11:34:53.533  INFO 94100 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 11:34:53.877  INFO 94100 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a690707: startup date [Sat Sep 29 11:34:51 CST 2018]; root of context hierarchy
+2018-09-29 11:34:53.929  INFO 94100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 11:34:53.930  INFO 94100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 11:34:53.930  INFO 94100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 11:34:53.930  INFO 94100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 11:34:53.931  INFO 94100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.userController.queryUser(java.lang.String)
+2018-09-29 11:34:53.931  INFO 94100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.userController.queryUserObj(java.lang.String)
+2018-09-29 11:34:53.933  INFO 94100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 11:34:53.934  INFO 94100 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 11:34:53.962  INFO 94100 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:34:53.962  INFO 94100 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:34:54.000  INFO 94100 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:34:54.402  WARN 94100 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 11:34:54.584  INFO 94100 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 11:34:54.585  INFO 94100 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 11:34:54.589  INFO 94100 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 11:34:54.682  INFO 94100 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 11:34:54.686  INFO 94100 --- [main] springboot.App                           : Started App in 4.144 seconds (JVM running for 4.405)
+2018-09-29 11:35:18.818  INFO 94100 --- [http-nio-8004-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-29 11:35:18.819  INFO 94100 --- [http-nio-8004-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-29 11:35:18.844  INFO 94100 --- [http-nio-8004-exec-2] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-09-29 11:35:18.942  INFO 94100 --- [http-nio-8004-exec-2] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:35:36.464  INFO 94100 --- [http-nio-8004-exec-6] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:35:41.041  INFO 94100 --- [http-nio-8004-exec-10] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:37:04.015  INFO 94100 --- [http-nio-8004-exec-9] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:39:39.506  INFO 70396 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 70396 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 11:39:39.508  INFO 70396 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 11:39:39.552  INFO 70396 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c2397b6: startup date [Sat Sep 29 11:39:39 CST 2018]; root of context hierarchy
+2018-09-29 11:39:40.212  INFO 70396 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 11:39:41.165  INFO 70396 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 11:39:41.174  INFO 70396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 11:39:41.175  INFO 70396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 11:39:41.291  INFO 70396 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 11:39:41.291  INFO 70396 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1739 ms
+2018-09-29 11:39:41.682  INFO 70396 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 11:39:41.684  INFO 70396 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 11:39:41.687  INFO 70396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 11:39:41.687  INFO 70396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 11:39:41.687  INFO 70396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 11:39:41.688  INFO 70396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 11:39:41.688  INFO 70396 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 11:39:42.206  INFO 70396 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 11:39:42.208  INFO 70396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 11:39:42.214  INFO 70396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 11:39:43.100  INFO 70396 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@c2397b6: startup date [Sat Sep 29 11:39:39 CST 2018]; root of context hierarchy
+2018-09-29 11:39:43.164  INFO 70396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 11:39:43.165  INFO 70396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 11:39:43.165  INFO 70396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 11:39:43.166  INFO 70396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double)
+2018-09-29 11:39:43.166  INFO 70396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.userController.queryUser(java.lang.String)
+2018-09-29 11:39:43.166  INFO 70396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.userController.queryUserObj(java.lang.String)
+2018-09-29 11:39:43.169  INFO 70396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 11:39:43.170  INFO 70396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 11:39:43.202  INFO 70396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:39:43.202  INFO 70396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:39:43.244  INFO 70396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:39:43.718  WARN 70396 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 11:39:43.856  INFO 70396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 11:39:43.856  INFO 70396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 11:39:43.860  INFO 70396 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 11:39:43.941  INFO 70396 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 11:39:43.945  INFO 70396 --- [main] springboot.App                           : Started App in 4.828 seconds (JVM running for 5.07)
+2018-09-29 11:40:21.454  INFO 70396 --- [http-nio-8004-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-29 11:40:21.455  INFO 70396 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-29 11:40:21.479  INFO 70396 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 24 ms
+2018-09-29 11:40:21.523  INFO 70396 --- [http-nio-8004-exec-1] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:40:33.872  INFO 70396 --- [http-nio-8004-exec-9] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:40:38.494  INFO 70396 --- [http-nio-8004-exec-10] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:40:42.245  INFO 70396 --- [http-nio-8004-exec-6] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:40:45.966  INFO 70396 --- [http-nio-8004-exec-2] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:40:51.724  INFO 70396 --- [http-nio-8004-exec-7] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:47:09.421  INFO 108432 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 108432 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 11:47:09.423  INFO 108432 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 11:47:09.471  INFO 108432 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ef8ce47: startup date [Sat Sep 29 11:47:09 CST 2018]; root of context hierarchy
+2018-09-29 11:47:10.136  INFO 108432 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 11:47:11.073  INFO 108432 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 11:47:11.081  INFO 108432 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 11:47:11.082  INFO 108432 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 11:47:11.166  INFO 108432 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 11:47:11.166  INFO 108432 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1695 ms
+2018-09-29 11:47:11.424  INFO 108432 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 11:47:11.425  INFO 108432 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 11:47:11.428  INFO 108432 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 11:47:11.429  INFO 108432 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 11:47:11.429  INFO 108432 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 11:47:11.429  INFO 108432 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 11:47:11.429  INFO 108432 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 11:47:11.890  INFO 108432 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 11:47:11.894  INFO 108432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 11:47:11.901  INFO 108432 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 11:47:12.826  INFO 108432 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2ef8ce47: startup date [Sat Sep 29 11:47:09 CST 2018]; root of context hierarchy
+2018-09-29 11:47:12.952  INFO 108432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 11:47:12.953  INFO 108432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 11:47:12.953  INFO 108432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 11:47:12.953  INFO 108432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double)
+2018-09-29 11:47:12.954  INFO 108432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long)
+2018-09-29 11:47:12.954  INFO 108432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.userController.queryUser(java.lang.String)
+2018-09-29 11:47:12.954  INFO 108432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.userController.queryUserObj(java.lang.String)
+2018-09-29 11:47:12.957  INFO 108432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 11:47:12.958  INFO 108432 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 11:47:12.987  INFO 108432 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:47:12.988  INFO 108432 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:47:13.030  INFO 108432 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 11:47:13.345  WARN 108432 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 11:47:13.491  INFO 108432 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 11:47:13.492  INFO 108432 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 11:47:13.496  INFO 108432 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 11:47:13.620  INFO 108432 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 11:47:13.624  INFO 108432 --- [main] springboot.App                           : Started App in 4.635 seconds (JVM running for 4.882)
+2018-09-29 11:49:44.825  INFO 108432 --- [http-nio-8004-exec-5] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-29 11:49:44.825  INFO 108432 --- [http-nio-8004-exec-5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-29 11:49:44.850  INFO 108432 --- [http-nio-8004-exec-5] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-09-29 11:49:44.893  INFO 108432 --- [http-nio-8004-exec-5] springboot.web.RedisTestController       : /redisTest5调入成功
+2018-09-29 11:50:05.481  INFO 108432 --- [http-nio-8004-exec-9] springboot.web.RedisTestController       : /redisTest5调入成功
+2018-09-29 11:53:12.842  INFO 108432 --- [http-nio-8004-exec-10] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 11:53:30.419  INFO 108432 --- [http-nio-8004-exec-6] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:17:21.644  INFO 100116 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 100116 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 13:17:21.646  INFO 100116 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 13:17:21.703  INFO 100116 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@754c61e7: startup date [Sat Sep 29 13:17:21 CST 2018]; root of context hierarchy
+2018-09-29 13:17:22.346  INFO 100116 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 13:17:23.315  INFO 100116 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 13:17:23.324  INFO 100116 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 13:17:23.325  INFO 100116 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 13:17:23.415  INFO 100116 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 13:17:23.415  INFO 100116 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1712 ms
+2018-09-29 13:17:23.708  INFO 100116 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 13:17:23.709  INFO 100116 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 13:17:23.712  INFO 100116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 13:17:23.712  INFO 100116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 13:17:23.712  INFO 100116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 13:17:23.713  INFO 100116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 13:17:23.713  INFO 100116 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 13:17:24.186  INFO 100116 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 13:17:24.188  INFO 100116 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 13:17:24.195  INFO 100116 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 13:17:24.513  INFO 100116 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@754c61e7: startup date [Sat Sep 29 13:17:21 CST 2018]; root of context hierarchy
+2018-09-29 13:17:24.572  INFO 100116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 13:17:24.573  INFO 100116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 13:17:24.573  INFO 100116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 13:17:24.573  INFO 100116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-29 13:17:24.573  INFO 100116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-29 13:17:24.574  INFO 100116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.userController.queryUser(java.lang.String)
+2018-09-29 13:17:24.574  INFO 100116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.userController.queryUserObj(java.lang.String)
+2018-09-29 13:17:24.577  INFO 100116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 13:17:24.577  INFO 100116 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 13:17:24.610  INFO 100116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:17:24.610  INFO 100116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:17:24.653  INFO 100116 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:17:25.112  WARN 100116 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 13:17:25.308  INFO 100116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 13:17:25.309  INFO 100116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 13:17:25.312  INFO 100116 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 13:17:25.430  INFO 100116 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 13:17:25.435  INFO 100116 --- [main] springboot.App                           : Started App in 4.212 seconds (JVM running for 4.45)
+2018-09-29 13:18:14.707  INFO 100116 --- [http-nio-8004-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-29 13:18:14.707  INFO 100116 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-29 13:18:14.733  INFO 100116 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 26 ms
+2018-09-29 13:18:14.781  INFO 100116 --- [http-nio-8004-exec-1] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:18:22.058  INFO 100116 --- [http-nio-8004-exec-9] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:18:34.958  INFO 100116 --- [http-nio-8004-exec-10] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:18:42.703  INFO 100116 --- [http-nio-8004-exec-6] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:18:50.147  INFO 100116 --- [http-nio-8004-exec-2] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:18:57.955  INFO 100116 --- [http-nio-8004-exec-7] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:19:38.349  INFO 100116 --- [http-nio-8004-exec-3] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:19:58.772  INFO 100116 --- [http-nio-8004-exec-8] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:20:22.919  INFO 100116 --- [http-nio-8004-exec-4] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:20:28.515  INFO 100116 --- [http-nio-8004-exec-5] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:20:32.916  INFO 100116 --- [http-nio-8004-exec-1] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:20:46.229  INFO 100116 --- [http-nio-8004-exec-9] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:21:07.422  INFO 100116 --- [http-nio-8004-exec-10] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:21:12.770  INFO 100116 --- [http-nio-8004-exec-6] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:21:36.800  INFO 100116 --- [http-nio-8004-exec-2] springboot.web.RedisTestController       : /redisTest3调入成功
+2018-09-29 13:23:31.024  INFO 100116 --- [http-nio-8004-exec-8] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:23:39.219  INFO 100116 --- [http-nio-8004-exec-4] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:23:59.672  INFO 100116 --- [http-nio-8004-exec-5] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:24:30.480  INFO 66056 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 66056 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 13:24:30.482  INFO 66056 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 13:24:30.527  INFO 66056 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55cf055c: startup date [Sat Sep 29 13:24:30 CST 2018]; root of context hierarchy
+2018-09-29 13:24:31.201  INFO 66056 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 13:24:32.221  INFO 66056 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 13:24:32.231  INFO 66056 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 13:24:32.232  INFO 66056 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 13:24:32.322  INFO 66056 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 13:24:32.323  INFO 66056 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1796 ms
+2018-09-29 13:24:32.661  INFO 66056 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 13:24:32.663  INFO 66056 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 13:24:32.666  INFO 66056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 13:24:32.666  INFO 66056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 13:24:32.666  INFO 66056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 13:24:32.666  INFO 66056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 13:24:32.667  INFO 66056 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 13:24:33.140  INFO 66056 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 13:24:33.143  INFO 66056 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 13:24:33.149  INFO 66056 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 13:24:33.457  INFO 66056 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@55cf055c: startup date [Sat Sep 29 13:24:30 CST 2018]; root of context hierarchy
+2018-09-29 13:24:33.510  INFO 66056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 13:24:33.511  INFO 66056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 13:24:33.511  INFO 66056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 13:24:33.512  INFO 66056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-29 13:24:33.512  INFO 66056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-29 13:24:33.512  INFO 66056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.userController.queryUser(java.lang.String)
+2018-09-29 13:24:33.513  INFO 66056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.userController.queryUserObj(java.lang.String)
+2018-09-29 13:24:33.515  INFO 66056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 13:24:33.516  INFO 66056 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 13:24:33.545  INFO 66056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:24:33.545  INFO 66056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:24:33.585  INFO 66056 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:24:34.055  WARN 66056 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 13:24:34.243  INFO 66056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 13:24:34.244  INFO 66056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 13:24:34.247  INFO 66056 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 13:24:34.310  INFO 66056 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 13:24:34.314  INFO 66056 --- [main] springboot.App                           : Started App in 4.27 seconds (JVM running for 4.514)
+2018-09-29 13:25:24.677  INFO 66056 --- [http-nio-8004-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-29 13:25:24.677  INFO 66056 --- [http-nio-8004-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-29 13:25:24.750  INFO 66056 --- [http-nio-8004-exec-3] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 73 ms
+2018-09-29 13:25:24.794  INFO 66056 --- [http-nio-8004-exec-3] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:25:37.704  INFO 66056 --- [http-nio-8004-exec-4] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:25:47.309  INFO 66056 --- [http-nio-8004-exec-8] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:26:15.658  INFO 66056 --- [http-nio-8004-exec-1] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:26:17.048  INFO 66056 --- [http-nio-8004-exec-5] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:26:25.518  INFO 66056 --- [http-nio-8004-exec-9] springboot.web.RedisTestController       : /redisTest4调入成功
+2018-09-29 13:27:32.800  INFO 66056 --- [http-nio-8004-exec-8] springboot.web.userController            : 进来了
+2018-09-29 13:27:32.804  INFO 66056 --- [http-nio-8004-exec-8] springboot.service.impl.userServiceImpl  : 调进来哈哈哈
+2018-09-29 13:27:32.804  INFO 66056 --- [hh1] springboot.service.impl.userServiceImpl  : 查询user对象,先睡会....
+2018-09-29 13:27:33.033 ERROR 66056 --- [http-nio-8004-exec-8] com.alibaba.druid.pool.DruidDataSource   : invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-29 13:27:33.195  INFO 66056 --- [http-nio-8004-exec-8] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2018-09-29 13:27:37.805  INFO 66056 --- [hh1] springboot.service.impl.userServiceImpl  : 查询user对象,睡醒了....
+2018-09-29 13:44:55.255  INFO 7700 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 7700 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 13:44:55.257  INFO 7700 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 13:44:55.301  INFO 7700 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b6d8a5: startup date [Sat Sep 29 13:44:55 CST 2018]; root of context hierarchy
+2018-09-29 13:44:55.934  INFO 7700 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 13:44:56.973  INFO 7700 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 13:44:56.982  INFO 7700 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 13:44:56.983  INFO 7700 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 13:44:57.082  INFO 7700 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 13:44:57.082  INFO 7700 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1782 ms
+2018-09-29 13:44:57.345  INFO 7700 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 13:44:57.346  INFO 7700 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 13:44:57.348  INFO 7700 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 13:44:57.349  INFO 7700 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 13:44:57.349  INFO 7700 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 13:44:57.349  INFO 7700 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 13:44:57.350  INFO 7700 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 13:44:57.935  INFO 7700 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 13:44:57.938  INFO 7700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 13:44:57.945  INFO 7700 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 13:44:58.291  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@1b6d8a5: startup date [Sat Sep 29 13:44:55 CST 2018]; root of context hierarchy
+2018-09-29 13:44:58.354  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eventTest]}" onto public java.lang.String springboot.web.EventTestController.eventTest(java.lang.String)
+2018-09-29 13:44:58.355  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 13:44:58.355  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 13:44:58.356  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 13:44:58.356  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-29 13:44:58.356  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-29 13:44:58.357  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.UserController.queryUser(java.lang.String)
+2018-09-29 13:44:58.357  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.UserController.queryUserObj(java.lang.String)
+2018-09-29 13:44:58.360  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 13:44:58.361  INFO 7700 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 13:44:58.395  INFO 7700 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:44:58.396  INFO 7700 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:44:58.442  INFO 7700 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:44:58.950  WARN 7700 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 13:44:59.149  INFO 7700 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 13:44:59.150  INFO 7700 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 13:44:59.154  INFO 7700 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 13:44:59.286  INFO 7700 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 13:44:59.290  INFO 7700 --- [main] springboot.App                           : Started App in 4.432 seconds (JVM running for 4.682)
+2018-09-29 13:45:50.639  INFO 7700 --- [http-nio-8004-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-29 13:45:50.639  INFO 7700 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-29 13:45:50.664  INFO 7700 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-09-29 13:45:50.711  INFO 7700 --- [http-nio-8004-exec-1] s.eventListener.EventListenerTest        : EventTestController进来啦
+2018-09-29 13:45:50.713  INFO 7700 --- [http-nio-8004-exec-1] s.eventListener.EventListenerTest        : 时间监听成功啦：haha
+2018-09-29 13:45:50.713  INFO 7700 --- [http-nio-8004-exec-1] s.eventListener.EventListenerTest        : EventTestController时间已发布
+2018-09-29 13:47:01.737  INFO 112296 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 112296 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 13:47:01.739  INFO 112296 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 13:47:01.787  INFO 112296 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b7c82a4: startup date [Sat Sep 29 13:47:01 CST 2018]; root of context hierarchy
+2018-09-29 13:47:02.416  INFO 112296 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 13:47:03.472  INFO 112296 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 13:47:03.480  INFO 112296 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 13:47:03.481  INFO 112296 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 13:47:03.567  INFO 112296 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 13:47:03.568  INFO 112296 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1781 ms
+2018-09-29 13:47:03.827  INFO 112296 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 13:47:03.829  INFO 112296 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 13:47:03.831  INFO 112296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 13:47:03.832  INFO 112296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 13:47:03.832  INFO 112296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 13:47:03.832  INFO 112296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 13:47:03.832  INFO 112296 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 13:47:04.305  INFO 112296 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 13:47:04.307  INFO 112296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 13:47:04.314  INFO 112296 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 13:47:05.185  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7b7c82a4: startup date [Sat Sep 29 13:47:01 CST 2018]; root of context hierarchy
+2018-09-29 13:47:05.244  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eventTest]}" onto public java.lang.String springboot.web.EventTestController.eventTest(java.lang.String)
+2018-09-29 13:47:05.245  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 13:47:05.246  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 13:47:05.246  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 13:47:05.247  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-29 13:47:05.247  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-29 13:47:05.247  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.UserController.queryUser(java.lang.String)
+2018-09-29 13:47:05.248  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.UserController.queryUserObj(java.lang.String)
+2018-09-29 13:47:05.251  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 13:47:05.251  INFO 112296 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 13:47:05.285  INFO 112296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:47:05.285  INFO 112296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:47:05.341  INFO 112296 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:47:05.745  WARN 112296 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 13:47:05.931  INFO 112296 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 13:47:05.932  INFO 112296 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 13:47:05.935  INFO 112296 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 13:47:06.006  INFO 112296 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 13:47:06.011  INFO 112296 --- [main] springboot.App                           : Started App in 4.676 seconds (JVM running for 4.923)
+2018-09-29 13:47:13.325  INFO 112296 --- [http-nio-8004-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-29 13:47:13.325  INFO 112296 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-29 13:47:13.350  INFO 112296 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-09-29 13:47:13.412  INFO 112296 --- [http-nio-8004-exec-1] s.eventListener.EventListenerTest        : EventTestController进来啦
+2018-09-29 13:47:13.414  INFO 112296 --- [http-nio-8004-exec-1] s.eventListener.EventListenerTest        : 时间监听成功啦：haha
+2018-09-29 13:47:13.414  INFO 112296 --- [http-nio-8004-exec-1] s.eventListener.EventListenerTest        : EventTestController时间已发布
+2018-09-29 13:47:30.939  INFO 112296 --- [http-nio-8004-exec-9] s.eventListener.EventListenerTest        : EventTestController进来啦
+2018-09-29 13:47:30.940  INFO 112296 --- [http-nio-8004-exec-9] s.eventListener.EventListenerTest        : 时间监听成功啦：nani
+2018-09-29 13:47:30.940  INFO 112296 --- [http-nio-8004-exec-9] s.eventListener.EventListenerTest        : EventTestController时间已发布
+2018-09-29 13:48:57.165  INFO 126688 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 126688 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 13:48:57.168  INFO 126688 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 13:48:57.219  INFO 126688 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72df190e: startup date [Sat Sep 29 13:48:57 CST 2018]; root of context hierarchy
+2018-09-29 13:48:57.922  INFO 126688 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 13:48:59.054  INFO 126688 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 13:48:59.063  INFO 126688 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 13:48:59.064  INFO 126688 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 13:48:59.169  INFO 126688 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 13:48:59.170  INFO 126688 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1952 ms
+2018-09-29 13:48:59.422  INFO 126688 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 13:48:59.423  INFO 126688 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 13:48:59.426  INFO 126688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 13:48:59.426  INFO 126688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 13:48:59.426  INFO 126688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 13:48:59.426  INFO 126688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 13:48:59.427  INFO 126688 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 13:48:59.906  INFO 126688 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 13:48:59.909  INFO 126688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 13:48:59.915  INFO 126688 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 13:49:00.221  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@72df190e: startup date [Sat Sep 29 13:48:57 CST 2018]; root of context hierarchy
+2018-09-29 13:49:00.275  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eventTest]}" onto public java.lang.String springboot.web.EventTestController.eventTest(java.lang.String)
+2018-09-29 13:49:00.276  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 13:49:00.277  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 13:49:00.277  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 13:49:00.277  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-29 13:49:00.277  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-29 13:49:00.278  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.UserController.queryUser(java.lang.String)
+2018-09-29 13:49:00.278  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.UserController.queryUserObj(java.lang.String)
+2018-09-29 13:49:00.280  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 13:49:00.281  INFO 126688 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 13:49:00.311  INFO 126688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:49:00.311  INFO 126688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:49:00.352  INFO 126688 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:49:00.834  WARN 126688 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 13:49:01.021  INFO 126688 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 13:49:01.021  INFO 126688 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 13:49:01.025  INFO 126688 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 13:49:01.257  INFO 126688 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 13:49:01.262  INFO 126688 --- [main] springboot.App                           : Started App in 4.519 seconds (JVM running for 4.76)
+2018-09-29 13:49:18.234  INFO 126688 --- [http-nio-8004-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2018-09-29 13:49:18.235  INFO 126688 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2018-09-29 13:49:18.260  INFO 126688 --- [http-nio-8004-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 25 ms
+2018-09-29 13:49:18.298  INFO 126688 --- [http-nio-8004-exec-1] s.eventListener.EventListenerTest        : EventTestController进来啦
+2018-09-29 13:49:18.299  INFO 126688 --- [http-nio-8004-exec-1] s.eventListener.EventListenerTest        : 事件监听成功啦：牛逼
+2018-09-29 13:49:18.300  INFO 126688 --- [http-nio-8004-exec-1] s.eventListener.EventListenerTest        : 事件监听成功啦：只要是string我就监听
+2018-09-29 13:49:18.300  INFO 126688 --- [http-nio-8004-exec-1] s.eventListener.EventListenerTest        : EventTestController时间已发布
+2018-09-29 13:57:22.147  INFO 115792 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 115792 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 13:57:22.150  INFO 115792 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 13:57:22.202  INFO 115792 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a690707: startup date [Sat Sep 29 13:57:22 CST 2018]; root of context hierarchy
+2018-09-29 13:57:23.001  INFO 115792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 13:57:24.036  INFO 115792 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 13:57:24.045  INFO 115792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 13:57:24.046  INFO 115792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 13:57:24.154  INFO 115792 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 13:57:24.154  INFO 115792 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1952 ms
+2018-09-29 13:57:24.403  INFO 115792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 13:57:24.404  INFO 115792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 13:57:24.407  INFO 115792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 13:57:24.407  INFO 115792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 13:57:24.407  INFO 115792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 13:57:24.407  INFO 115792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 13:57:24.408  INFO 115792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 13:57:24.894  INFO 115792 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 13:57:24.897  INFO 115792 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 13:57:24.903  INFO 115792 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 13:57:25.247  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@a690707: startup date [Sat Sep 29 13:57:22 CST 2018]; root of context hierarchy
+2018-09-29 13:57:25.301  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eventTest]}" onto public java.lang.String springboot.web.EventTestController.eventTest(java.lang.String)
+2018-09-29 13:57:25.303  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 13:57:25.303  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 13:57:25.304  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 13:57:25.304  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-29 13:57:25.304  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-29 13:57:25.305  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.UserController.queryUser(java.lang.String)
+2018-09-29 13:57:25.305  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.UserController.queryUserObj(java.lang.String)
+2018-09-29 13:57:25.307  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 13:57:25.308  INFO 115792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 13:57:25.342  INFO 115792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:57:25.342  INFO 115792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:57:25.420  INFO 115792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:57:25.764  WARN 115792 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 13:57:25.943  INFO 115792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 13:57:25.944  INFO 115792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 13:57:25.948  INFO 115792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 13:57:25.982  INFO 115792 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-09-29 13:57:26.034  INFO 115792 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 13:57:26.038  INFO 115792 --- [main] springboot.App                           : Started App in 4.32 seconds (JVM running for 4.578)
+2018-09-29 13:57:30.011  INFO 115792 --- [hh2] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:57:30.011  INFO 115792 --- [hh1] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:57:30.011  INFO 115792 --- [hh5] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:57:30.011  INFO 115792 --- [hh4] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:57:30.011  INFO 115792 --- [hh3] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:57:35.001  INFO 115792 --- [hh2] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:57:35.001  INFO 115792 --- [hh1] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:57:35.001  INFO 115792 --- [hh5] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:57:35.001  INFO 115792 --- [hh5] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:57:35.001  INFO 115792 --- [hh5] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:57:40.001  INFO 115792 --- [hh2] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:57:40.001  INFO 115792 --- [hh2] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:57:40.001  INFO 115792 --- [hh2] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:57:40.001  INFO 115792 --- [hh2] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:57:40.001  INFO 115792 --- [hh1] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:57:45.001  INFO 115792 --- [hh4] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:57:45.001  INFO 115792 --- [hh2] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:57:45.001  INFO 115792 --- [hh3] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:57:45.001  INFO 115792 --- [hh4] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:57:45.001  INFO 115792 --- [hh4] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:57:50.001  INFO 115792 --- [hh3] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:57:50.001  INFO 115792 --- [hh2] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:57:50.001  INFO 115792 --- [hh4] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:57:50.001  INFO 115792 --- [hh5] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:57:50.001  INFO 115792 --- [hh3] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:57:55.001  INFO 115792 --- [hh1] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:57:55.001  INFO 115792 --- [hh2] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:57:55.001  INFO 115792 --- [hh4] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:57:55.001  INFO 115792 --- [hh5] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:57:55.001  INFO 115792 --- [hh3] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:58:11.044  INFO 78356 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 78356 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-09-29 13:58:11.047  INFO 78356 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-29 13:58:11.096  INFO 78356 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53d67244: startup date [Sat Sep 29 13:58:11 CST 2018]; root of context hierarchy
+2018-09-29 13:58:11.760  INFO 78356 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-29 13:58:12.709  INFO 78356 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-09-29 13:58:12.719  INFO 78356 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-29 13:58:12.719  INFO 78356 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-29 13:58:12.805  INFO 78356 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-29 13:58:12.806  INFO 78356 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1710 ms
+2018-09-29 13:58:13.081  INFO 78356 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-29 13:58:13.083  INFO 78356 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-29 13:58:13.085  INFO 78356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-29 13:58:13.086  INFO 78356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-29 13:58:13.086  INFO 78356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-29 13:58:13.086  INFO 78356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-29 13:58:13.086  INFO 78356 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-29 13:58:13.562  INFO 78356 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-29 13:58:13.565  INFO 78356 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-29 13:58:13.573  INFO 78356 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-29 13:58:13.884  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@53d67244: startup date [Sat Sep 29 13:58:11 CST 2018]; root of context hierarchy
+2018-09-29 13:58:13.938  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eventTest]}" onto public java.lang.String springboot.web.EventTestController.eventTest(java.lang.String)
+2018-09-29 13:58:13.940  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-29 13:58:13.940  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-29 13:58:13.940  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-29 13:58:13.941  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-29 13:58:13.941  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-29 13:58:13.941  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.UserController.queryUser(java.lang.String)
+2018-09-29 13:58:13.942  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.UserController.queryUserObj(java.lang.String)
+2018-09-29 13:58:13.944  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-29 13:58:13.944  INFO 78356 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-29 13:58:13.973  INFO 78356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:58:13.974  INFO 78356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:58:14.087  INFO 78356 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-29 13:58:14.468  WARN 78356 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-29 13:58:14.652  INFO 78356 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-29 13:58:14.652  INFO 78356 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-29 13:58:14.656  INFO 78356 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-29 13:58:14.693  INFO 78356 --- [main] s.a.ScheduledAnnotationBeanPostProcessor : No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2018-09-29 13:58:14.730  INFO 78356 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-09-29 13:58:14.734  INFO 78356 --- [main] springboot.App                           : Started App in 4.091 seconds (JVM running for 4.346)
+2018-09-29 13:58:15.056  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:58:15.056  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:58:15.058  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:58:15.058  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:58:15.059  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:58:20.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:58:20.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:58:20.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:58:20.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:58:20.002  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:58:25.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:58:25.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:58:25.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:58:25.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:58:25.002  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:58:30.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:58:30.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:58:30.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:58:30.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:58:30.002  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:58:35.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:58:35.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:58:35.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:58:35.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:58:35.002  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:58:40.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:58:40.002  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:58:40.002  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:58:40.003  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:58:40.003  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:58:45.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:58:45.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:58:45.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest5开始执行咯
+2018-09-29 13:58:45.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:58:45.002  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:58:50.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest3开始执行咯
+2018-09-29 13:58:50.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest4开始执行咯
+2018-09-29 13:58:50.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest2开始执行咯
+2018-09-29 13:58:50.001  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest1开始执行咯
+2018-09-29 13:58:50.002  INFO 78356 --- [pool-2-thread-1] springboot.task.TaskTest                 : TaskTest5开始执行咯

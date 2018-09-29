@@ -1,0 +1,1 @@
+2018-09-29 13:27:33.033 [http-nio-8004-exec-8] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL

@@ -137,18 +137,6 @@ public class RedisUtil {
     }
 
     /**
-     * 列表获取
-     * @param k
-     * @param l
-     * @param l1
-     * @return
-     */
-    public List<Object> lRange(String k, long l, long l1){
-        ListOperations<String, Object> list = redisTemplate.opsForList();
-        return list.range(k,l,l1);
-    }
-
-    /**
      * 集合添加
      * @param key
      * @param value
@@ -180,14 +168,37 @@ public class RedisUtil {
     }
 
     /**
-     * 有序集合获取
+     * 有序集合获取(指定分数区间)
      * @param key
      * @param scoure
      * @param scoure1
      * @return
      */
-    public Set<Object> rangeByScore(String key,double scoure,double scoure1){
+    public Set<Object> rangeByScore(String key,double scoure,double scoure1,String orderBy){
         ZSetOperations<String, Object> zset = redisTemplate.opsForZSet();
-        return zset.rangeByScore(key, scoure, scoure1);
+        Set<Object> set = null;
+        if("desc".equalsIgnoreCase(orderBy)){
+        	set = zset.reverseRangeByScore(key, scoure, scoure1);
+        }else{
+        	set = zset.rangeByScore(key, scoure, scoure1);
+        }
+        return set;
+    }
+    /**
+     * 有序集合获取(指定下标)
+     * @param key
+     * @param scoure
+     * @param scoure1
+     * @return
+     */
+    public Set<Object> zRevRange(String key,long scoure,long scoure1,String orderBy){
+    	ZSetOperations<String, Object> zset = redisTemplate.opsForZSet();
+    	Set<Object> set = null;
+    	 if("desc".equalsIgnoreCase(orderBy)){
+    		 set = zset.reverseRange(key, scoure, scoure1);
+    	 }else{
+    		 set = zset.range(key, scoure, scoure1);
+    	 }
+    	return set;
     }
 }

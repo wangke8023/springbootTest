@@ -6,8 +6,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.web.support.SpringBootServletInitializer;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 @MapperScan("springboot.dao")
+@EnableScheduling
 @SpringBootApplication(exclude={HibernateJpaAutoConfiguration.class})
 public class App extends SpringBootServletInitializer{
 	public static void main(String[] args) {
