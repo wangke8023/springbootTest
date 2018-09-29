@@ -1,0 +1,14 @@
+2018-09-26 11:44:21.919 [http-nio-8080-exec-3] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 13:59:07.204 [http-nio-8080-exec-1] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:01:21.056 [http-nio-8080-exec-6] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:04:23.649 [http-nio-8080-exec-2] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:06:21.585 [http-nio-8080-exec-3] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:08:58.515 [http-nio-8080-exec-2] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:09:45.999 [http-nio-8080-exec-2] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:11:08.807 [http-nio-8080-exec-2] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:13:24.927 [http-nio-8080-exec-1] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:15:58.921 [http-nio-8080-exec-2] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:18:54.077 [http-nio-8080-exec-2] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:20:26.874 [http-nio-8080-exec-4] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:39:20.250 [http-nio-8004-exec-2] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
+2018-09-26 14:40:16.242 [http-nio-8004-exec-6] ERROR c.alibaba.druid.pool.DruidDataSource -invalid oracle validationQuery. select 'x', may should be : select 'x' FROM DUAL
