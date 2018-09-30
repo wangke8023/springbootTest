@@ -2799,3 +2799,329 @@ java.net.SocketException: socket closed
 	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:571)
 	at java.lang.Thread.run(Thread.java:745)
 
+2018-09-30 09:13:34.007  INFO 87792 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 87792 (E:\gitProject\springbootTest\springbootTestSlave\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTestSlave)
+2018-09-30 09:13:34.011  INFO 87792 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-30 09:13:34.065  INFO 87792 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c0b7036: startup date [Sun Sep 30 09:13:34 CST 2018]; root of context hierarchy
+2018-09-30 09:13:34.861  INFO 87792 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-30 09:13:35.476  INFO 87792 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$e2090e67] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 09:13:36.126  INFO 87792 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8005 (http)
+2018-09-30 09:13:36.137  INFO 87792 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-30 09:13:36.138  INFO 87792 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-30 09:13:36.231  INFO 87792 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-30 09:13:36.231  INFO 87792 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2166 ms
+2018-09-30 09:13:36.525  INFO 87792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-30 09:13:36.526  INFO 87792 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-30 09:13:36.529  INFO 87792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-30 09:13:36.529  INFO 87792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-30 09:13:36.529  INFO 87792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-30 09:13:36.529  INFO 87792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-30 09:13:36.530  INFO 87792 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-30 09:13:37.146  INFO 87792 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-30 09:13:37.148  INFO 87792 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-30 09:13:37.155  INFO 87792 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-30 09:13:37.552  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@7c0b7036: startup date [Sun Sep 30 09:13:34 CST 2018]; root of context hierarchy
+2018-09-30 09:13:37.608  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eventTest]}" onto public java.lang.String springboot.web.EventTestController.eventTest(java.lang.String)
+2018-09-30 09:13:37.609  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitMQ]}" onto public java.lang.String springboot.web.RabbitMQTestController.test(java.lang.String)
+2018-09-30 09:13:37.610  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-30 09:13:37.610  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-30 09:13:37.611  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-30 09:13:37.611  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-30 09:13:37.611  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-30 09:13:37.612  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.UserController.queryUser(java.lang.String)
+2018-09-30 09:13:37.612  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.UserController.queryUserObj(java.lang.String)
+2018-09-30 09:13:37.614  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-30 09:13:37.615  INFO 87792 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-30 09:13:37.652  INFO 87792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 09:13:37.653  INFO 87792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 09:13:37.695  INFO 87792 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 09:13:38.269  WARN 87792 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-30 09:13:38.470  INFO 87792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-30 09:13:38.471  INFO 87792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-30 09:13:38.478  INFO 87792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-09-30 09:13:38.480  INFO 87792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-30 09:13:38.483  INFO 87792 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-09-30 09:13:38.519  INFO 87792 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-09-30 09:13:38.519  INFO 87792 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-30 09:13:39.173  INFO 87792 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8005 (http)
+2018-09-30 09:13:39.179  INFO 87792 --- [main] springboot.App                           : Started App in 5.638 seconds (JVM running for 5.916)
+2018-09-30 09:13:39.179 ERROR 87792 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+java.net.SocketException: socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:164)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:571)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-09-30 09:13:44.111  INFO 87792 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@19a81722: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:13:44.117 ERROR 87792 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:164)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:571)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-09-30 09:13:49.123  INFO 87792 --- [SimpleAsyncTaskExecutor-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4c498013: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:13:49.128 ERROR 87792 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+java.net.SocketException: socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:164)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:571)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-09-30 09:13:54.127  INFO 87792 --- [SimpleAsyncTaskExecutor-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@27babfa0: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:13:54.132 ERROR 87792 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:164)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:571)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-09-30 09:30:09.200  INFO 129988 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 129988 (E:\gitProject\springbootTest\springbootTestSlave\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTestSlave)
+2018-09-30 09:30:09.202  INFO 129988 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-30 09:30:09.263  INFO 129988 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44f4ab60: startup date [Sun Sep 30 09:30:09 CST 2018]; root of context hierarchy
+2018-09-30 09:30:10.086  INFO 129988 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-30 09:30:10.563  INFO 129988 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$dbeae47a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 09:30:11.230  INFO 129988 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8005 (http)
+2018-09-30 09:30:11.239  INFO 129988 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-30 09:30:11.240  INFO 129988 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-30 09:30:11.344  INFO 129988 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-30 09:30:11.344  INFO 129988 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2081 ms
+2018-09-30 09:30:11.645  INFO 129988 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-30 09:30:11.646  INFO 129988 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-30 09:30:11.649  INFO 129988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-30 09:30:11.650  INFO 129988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-30 09:30:11.650  INFO 129988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-30 09:30:11.650  INFO 129988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-30 09:30:11.650  INFO 129988 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-30 09:30:12.220  INFO 129988 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-30 09:30:12.222  INFO 129988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-30 09:30:12.228  INFO 129988 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-30 09:30:12.617  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@44f4ab60: startup date [Sun Sep 30 09:30:09 CST 2018]; root of context hierarchy
+2018-09-30 09:30:12.674  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eventTest]}" onto public java.lang.String springboot.web.EventTestController.eventTest(java.lang.String)
+2018-09-30 09:30:12.675  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitMQ]}" onto public java.lang.String springboot.web.RabbitMQTestController.test(java.lang.String)
+2018-09-30 09:30:12.676  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-30 09:30:12.676  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-30 09:30:12.676  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-30 09:30:12.677  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-30 09:30:12.677  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-30 09:30:12.677  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.UserController.queryUser(java.lang.String)
+2018-09-30 09:30:12.678  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.UserController.queryUserObj(java.lang.String)
+2018-09-30 09:30:12.680  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-30 09:30:12.680  INFO 129988 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-30 09:30:12.718  INFO 129988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 09:30:12.719  INFO 129988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 09:30:12.760  INFO 129988 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 09:30:13.668  WARN 129988 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-30 09:30:13.867  INFO 129988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-30 09:30:13.867  INFO 129988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-30 09:30:13.874  INFO 129988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-09-30 09:30:13.876  INFO 129988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-30 09:30:13.879  INFO 129988 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-09-30 09:30:13.912  INFO 129988 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-09-30 09:30:13.912  INFO 129988 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-30 09:30:14.654 ERROR 129988 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:164)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:571)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-09-30 09:30:14.694  INFO 129988 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8005 (http)
+2018-09-30 09:30:14.699  INFO 129988 --- [main] springboot.App                           : Started App in 5.933 seconds (JVM running for 6.198)
+2018-09-30 09:30:19.655  INFO 129988 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6a118827: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:30:19.662 ERROR 129988 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+java.net.SocketException: socket closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:164)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:571)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-09-30 09:30:24.662  INFO 129988 --- [SimpleAsyncTaskExecutor-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4c498013: tags=[{}], channel=null, acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:30:24.667 ERROR 129988 --- [AMQP Connection 127.0.0.1:5672] c.r.c.impl.ForgivingExceptionHandler     : An unexpected connection driver error occured
+
+java.net.SocketException: Socket Closed
+	at java.net.SocketInputStream.socketRead0(Native Method)
+	at java.net.SocketInputStream.read(SocketInputStream.java:152)
+	at java.net.SocketInputStream.read(SocketInputStream.java:122)
+	at java.io.BufferedInputStream.fill(BufferedInputStream.java:235)
+	at java.io.BufferedInputStream.read(BufferedInputStream.java:254)
+	at java.io.DataInputStream.readUnsignedByte(DataInputStream.java:288)
+	at com.rabbitmq.client.impl.Frame.readFrom(Frame.java:91)
+	at com.rabbitmq.client.impl.SocketFrameHandler.readFrame(SocketFrameHandler.java:164)
+	at com.rabbitmq.client.impl.AMQConnection$MainLoop.run(AMQConnection.java:571)
+	at java.lang.Thread.run(Thread.java:745)
+
+2018-09-30 09:45:28.456  INFO 113608 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 113608 (E:\gitProject\springbootTest\springbootTestSlave\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTestSlave)
+2018-09-30 09:45:28.458  INFO 113608 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-30 09:45:28.532  INFO 113608 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60b964af: startup date [Sun Sep 30 09:45:28 CST 2018]; root of context hierarchy
+2018-09-30 09:45:29.322  INFO 113608 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-30 09:45:29.799  INFO 113608 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$d6ab88cd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 09:45:30.415  INFO 113608 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8005 (http)
+2018-09-30 09:45:30.427  INFO 113608 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-30 09:45:30.428  INFO 113608 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-30 09:45:30.562  INFO 113608 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-30 09:45:30.563  INFO 113608 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2031 ms
+2018-09-30 09:45:30.861  INFO 113608 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-30 09:45:30.862  INFO 113608 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-30 09:45:30.865  INFO 113608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-30 09:45:30.866  INFO 113608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-30 09:45:30.866  INFO 113608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-30 09:45:30.866  INFO 113608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-30 09:45:30.866  INFO 113608 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-30 09:45:31.471  INFO 113608 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-30 09:45:31.474  INFO 113608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-30 09:45:31.479  INFO 113608 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-30 09:45:31.807  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@60b964af: startup date [Sun Sep 30 09:45:28 CST 2018]; root of context hierarchy
+2018-09-30 09:45:31.868  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eventTest]}" onto public java.lang.String springboot.web.EventTestController.eventTest(java.lang.String)
+2018-09-30 09:45:31.869  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitMQ]}" onto public java.lang.String springboot.web.RabbitMQTestController.test(java.lang.String)
+2018-09-30 09:45:31.870  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-30 09:45:31.870  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-30 09:45:31.871  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-30 09:45:31.871  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-30 09:45:31.871  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-30 09:45:31.872  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.UserController.queryUser(java.lang.String)
+2018-09-30 09:45:31.872  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.UserController.queryUserObj(java.lang.String)
+2018-09-30 09:45:31.874  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-30 09:45:31.875  INFO 113608 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-30 09:45:31.915  INFO 113608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 09:45:31.915  INFO 113608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 09:45:31.959  INFO 113608 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 09:45:32.476  WARN 113608 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-30 09:45:32.678  INFO 113608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-30 09:45:32.678  INFO 113608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-30 09:45:32.685  INFO 113608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-09-30 09:45:32.687  INFO 113608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-30 09:45:32.689  INFO 113608 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-09-30 09:45:32.722  INFO 113608 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-09-30 09:45:32.723  INFO 113608 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-30 09:45:33.029  INFO 113608 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#77124e15:0/SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223]
+2018-09-30 09:45:33.095 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:45:33.228  INFO 113608 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8005 (http)
+2018-09-30 09:45:33.233  INFO 113608 --- [main] springboot.App                           : Started App in 5.217 seconds (JVM running for 5.486)
+2018-09-30 09:45:38.159  INFO 113608 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@884fa6d: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:45:38.163 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:45:43.164  INFO 113608 --- [SimpleAsyncTaskExecutor-2] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@c3695bc: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:45:43.167 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:45:48.168  INFO 113608 --- [SimpleAsyncTaskExecutor-3] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@2439f654: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:45:48.171 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:45:53.172  INFO 113608 --- [SimpleAsyncTaskExecutor-4] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5073c8b5: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:45:53.176 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:45:58.177  INFO 113608 --- [SimpleAsyncTaskExecutor-5] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@72ca246f: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:45:58.180 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:03.181  INFO 113608 --- [SimpleAsyncTaskExecutor-6] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@3a372f71: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:03.184 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:08.185  INFO 113608 --- [SimpleAsyncTaskExecutor-7] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4b5df5d4: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:08.188 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:13.189  INFO 113608 --- [SimpleAsyncTaskExecutor-8] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@6da5e8b1: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:13.192 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:18.193  INFO 113608 --- [SimpleAsyncTaskExecutor-9] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@5b4fb728: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:18.197 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:23.198  INFO 113608 --- [SimpleAsyncTaskExecutor-10] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1489226c: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:23.201 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:28.201  INFO 113608 --- [SimpleAsyncTaskExecutor-11] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@27c88767: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:28.204 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:33.208  INFO 113608 --- [SimpleAsyncTaskExecutor-12] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@189156e2: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:33.211 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:38.213  INFO 113608 --- [SimpleAsyncTaskExecutor-13] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1ed99a37: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:38.216 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:43.364  INFO 113608 --- [SimpleAsyncTaskExecutor-14] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@26ee13c1: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:43.921 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:49.099  INFO 113608 --- [SimpleAsyncTaskExecutor-15] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@21625641: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:49.103 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:54.123  INFO 113608 --- [SimpleAsyncTaskExecutor-16] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1cfd5850: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:54.125 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:46:59.126  INFO 113608 --- [SimpleAsyncTaskExecutor-17] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@19bed536: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:46:59.130 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:47:04.131  INFO 113608 --- [SimpleAsyncTaskExecutor-18] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4a6a412c: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:47:04.134 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:47:09.135  INFO 113608 --- [SimpleAsyncTaskExecutor-19] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@4b86d77: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:47:09.138 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 09:47:14.139  INFO 113608 --- [SimpleAsyncTaskExecutor-20] o.s.a.r.l.SimpleMessageListenerContainer : Restarting Consumer@1ab56469: tags=[{}], channel=Cached Rabbit Channel: AMQChannel(amqp://slave@127.0.0.1:5672/,1), conn: Proxy@32119303 Shared Rabbit Connection: SimpleConnection@57c65fd8 [delegate=amqp://slave@127.0.0.1:5672/, localPort= 64223], acknowledgeMode=AUTO local queue size=0
+2018-09-30 09:47:14.142 ERROR 113608 --- [AMQP Connection 127.0.0.1:5672] o.s.a.r.c.CachingConnectionFactory       : Channel shutdown: channel error; protocol method: #method<channel.close>(reply-code=403, reply-text=ACCESS_REFUSED - access to queue 'hello' in vhost '/' refused for user 'slave', class-id=60, method-id=20)
+2018-09-30 10:00:23.065  INFO 31320 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 31320 (E:\gitProject\springbootTest\springbootTestSlave\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTestSlave)
+2018-09-30 10:00:23.068  INFO 31320 --- [main] springboot.App                           : The following profiles are active: dev
+2018-09-30 10:00:23.129  INFO 31320 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@748caaae: startup date [Sun Sep 30 10:00:23 CST 2018]; root of context hierarchy
+2018-09-30 10:00:23.926  INFO 31320 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-09-30 10:00:24.496  INFO 31320 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$dbeae47a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-09-30 10:00:25.013  INFO 31320 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8005 (http)
+2018-09-30 10:00:25.022  INFO 31320 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-09-30 10:00:25.023  INFO 31320 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-09-30 10:00:25.146  INFO 31320 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-09-30 10:00:25.146  INFO 31320 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2017 ms
+2018-09-30 10:00:25.442  INFO 31320 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-09-30 10:00:25.443  INFO 31320 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-09-30 10:00:25.446  INFO 31320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-09-30 10:00:25.447  INFO 31320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-09-30 10:00:25.447  INFO 31320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-09-30 10:00:25.447  INFO 31320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-09-30 10:00:25.447  INFO 31320 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-09-30 10:00:26.184  INFO 31320 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-09-30 10:00:26.187  INFO 31320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-09-30 10:00:26.201  INFO 31320 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-09-30 10:00:26.771  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@748caaae: startup date [Sun Sep 30 10:00:23 CST 2018]; root of context hierarchy
+2018-09-30 10:00:26.826  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eventTest]}" onto public java.lang.String springboot.web.EventTestController.eventTest(java.lang.String)
+2018-09-30 10:00:26.827  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitMQ]}" onto public java.lang.String springboot.web.RabbitMQTestController.test(java.lang.String)
+2018-09-30 10:00:26.828  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-09-30 10:00:26.828  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-09-30 10:00:26.829  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-09-30 10:00:26.829  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-09-30 10:00:26.829  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-09-30 10:00:26.830  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.UserController.queryUser(java.lang.String)
+2018-09-30 10:00:26.830  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.UserController.queryUserObj(java.lang.String)
+2018-09-30 10:00:26.832  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-09-30 10:00:26.833  INFO 31320 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-09-30 10:00:26.870  INFO 31320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 10:00:26.870  INFO 31320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 10:00:26.913  INFO 31320 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-09-30 10:00:28.337  WARN 31320 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-09-30 10:00:28.498  INFO 31320 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-09-30 10:00:28.499  INFO 31320 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-09-30 10:00:28.505  INFO 31320 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2018-09-30 10:00:28.507  INFO 31320 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-09-30 10:00:28.509  INFO 31320 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2018-09-30 10:00:28.539  INFO 31320 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-09-30 10:00:28.540  INFO 31320 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-09-30 10:00:29.156  INFO 31320 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: rabbitConnectionFactory#79b2db74:0/SimpleConnection@3641ef8a [delegate=amqp://guest@127.0.0.1:5672/, localPort= 59298]
+2018-09-30 10:00:29.286  INFO 31320 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8005 (http)
+2018-09-30 10:00:29.292  INFO 31320 --- [main] springboot.App                           : Started App in 6.622 seconds (JVM running for 6.87)

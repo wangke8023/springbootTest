@@ -42,7 +42,7 @@ public class RabbitMQConfig {
         return connectionFactory;
 	}
 	@Bean
-    //@Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
+    @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
     public RabbitTemplate rabbitTemplate() {
         RabbitTemplate template = new RabbitTemplate(connectionFactory());
         return template;
@@ -52,33 +52,11 @@ public class RabbitMQConfig {
 	    return new DirectExchange("EXCHANGE_NAME");
 	}
 	@Bean
-    public Queue Queue() {
-        return new Queue("hello",true);
-    }
-	@Bean
 	public Binding binding() {
 	    return BindingBuilder.bind(Queue()).to(defaultExchange()).with("ROUTING_KEY");
 	}
-	/**
-	 * 将ACK修改为手动确认，避免消息在处理过程中发生异常造成被误认为已经成功消费的假象。
-	 * @return
-	 */
-	//@Bean
-	public SimpleMessageListenerContainer messageContainer() {
-	    SimpleMessageListenerContainer container = new SimpleMessageListenerContainer(connectionFactory());
-	    container.setQueues(Queue());
-	    container.setExposeListenerChannel(true);
-	    container.setMaxConcurrentConsumers(1);
-	    container.setConcurrentConsumers(1);
-	    container.setAcknowledgeMode(AcknowledgeMode.MANUAL);
-	    container.setMessageListener(new ChannelAwareMessageListener() {
-
-	        public void onMessage(Message message, com.rabbitmq.client.Channel channel) throws Exception {
-	            byte[] body = message.getBody();
-	            logger.info("消费端接收到消息 : " + new String(body));
-	            channel.basicAck(message.getMessageProperties().getDeliveryTag(), false);
-	        }
-	    });
-	    return container;
+	@Bean
+	public Queue Queue() {
+		return new Queue("hello",true);
 	}
 }
