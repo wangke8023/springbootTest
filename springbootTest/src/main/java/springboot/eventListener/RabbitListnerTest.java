@@ -6,11 +6,11 @@ import org.springframework.amqp.rabbit.annotation.RabbitHandler;
 import org.springframework.amqp.rabbit.annotation.RabbitListener;
 import org.springframework.stereotype.Component;
 
-//@Component
-//@RabbitListener(queues = "hello")
+@Component
+@RabbitListener(queues = "hello")
 public class RabbitListnerTest {
 	private static final Logger logger = LoggerFactory.getLogger(EventListenerTest.class);
-	//@RabbitHandler
+	@RabbitHandler
     public void process(String hello) {
 		logger.info("消费消息："+hello);
     }

@@ -1,29 +1,20 @@
 package springboot.config;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import org.springframework.amqp.core.AcknowledgeMode;
 import org.springframework.amqp.core.Binding;
 import org.springframework.amqp.core.BindingBuilder;
-import org.springframework.amqp.core.DirectExchange;
-import org.springframework.amqp.core.Message;
 import org.springframework.amqp.core.Queue;
+import org.springframework.amqp.core.TopicExchange;
 import org.springframework.amqp.rabbit.connection.CachingConnectionFactory;
 import org.springframework.amqp.rabbit.connection.ConnectionFactory;
-import org.springframework.amqp.rabbit.core.ChannelAwareMessageListener;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
-import org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
 
-import springboot.eventListener.EventListenerTest;
 @Configuration
 public class RabbitMQConfig {
-	private static final Logger logger = LoggerFactory.getLogger(EventListenerTest.class);
-
 	@Value("${spring.rabbitmq.host}")
     private String host;
 	@Value("${spring.rabbitmq.port}")
@@ -32,6 +23,10 @@ public class RabbitMQConfig {
     private String username;
 	@Value("${spring.rabbitmq.password}")
     private String password;
+	/**
+	 * 创建连接工厂
+	 * @return
+	 */
 	@Bean
 	public ConnectionFactory connectionFactory() {
         CachingConnectionFactory connectionFactory = new CachingConnectionFactory(host,port);
@@ -41,22 +36,38 @@ public class RabbitMQConfig {
         connectionFactory.setPublisherConfirms(true);
         return connectionFactory;
 	}
+	/**
+	 * 创建通道模板
+	 * @return
+	 */
 	@Bean
     @Scope(ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-    public RabbitTemplate rabbitTemplate() {
+    public RabbitTemplate  amqpt() {
         RabbitTemplate template = new RabbitTemplate(connectionFactory());
         return template;
     }
+	/**
+	 * 声明交换机(topic模式)
+	 * @return
+	 */
 	@Bean
-	public DirectExchange defaultExchange() {
-	    return new DirectExchange("EXCHANGE_NAME");
+    public TopicExchange topicExchange(){
+        return new TopicExchange("EXCHANGE_NAME_TOPIC");
+    }
+	/**
+	 * 声明队列
+	 * @return
+	 */
+	@Bean
+	public Queue queue() {
+		return new Queue("world",true);
 	}
+	/**
+	 * 绑定交换机和队列
+	 * @return
+	 */
 	@Bean
-	public Binding binding() {
-	    return BindingBuilder.bind(Queue()).to(defaultExchange()).with("ROUTING_KEY");
-	}
-	@Bean
-	public Queue Queue() {
-		return new Queue("hello",true);
+	public Binding binding(Queue queue,TopicExchange topicExchange) {
+	    return BindingBuilder.bind(queue).to(topicExchange).with("topic.#");
 	}
 }
