@@ -3726,3 +3726,53 @@ Consider defining a bean of type 'java.lang.String' in your configuration.
 2018-09-30 11:13:14.883  INFO 44892 --- [http-nio-8004-exec-5] o.s.a.r.c.CachingConnectionFactory       : Created new connection: connectionFactory#16041baf:0/SimpleConnection@1e697ad2 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 57766]
 2018-09-30 11:13:14.961  INFO 44892 --- [AMQP Connection 127.0.0.1:5672] s.eventListener.EventListenerTest        :  消息id:CorrelationData [id=a2eb0aab-b097-479a-b5e1-5e4ba4c79d72]
 2018-09-30 11:13:14.961  INFO 44892 --- [AMQP Connection 127.0.0.1:5672] s.eventListener.EventListenerTest        : 消息发送确认成功
+2018-10-10 17:49:48.249  INFO 5476 --- [main] springboot.App                           : Starting App on SZXH3FITWB050 with PID 5476 (E:\gitProject\springbootTest\springbootTest\target\classes started by ke.wang01 in E:\gitProject\springbootTest\springbootTest)
+2018-10-10 17:49:48.257  INFO 5476 --- [main] springboot.App                           : The following profiles are active: dev
+2018-10-10 17:49:48.314  INFO 5476 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2333bf6d: startup date [Wed Oct 10 17:49:48 CST 2018]; root of context hierarchy
+2018-10-10 17:49:49.099  INFO 5476 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2018-10-10 17:49:49.586  INFO 5476 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$a53a5f2f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2018-10-10 17:49:50.151  INFO 5476 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8004 (http)
+2018-10-10 17:49:50.160  INFO 5476 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2018-10-10 17:49:50.160  INFO 5476 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2018-10-10 17:49:50.284  INFO 5476 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2018-10-10 17:49:50.284  INFO 5476 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1970 ms
+2018-10-10 17:49:50.610  INFO 5476 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'statViewServlet' to [/druid/*]
+2018-10-10 17:49:50.611  INFO 5476 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2018-10-10 17:49:50.613  INFO 5476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2018-10-10 17:49:50.619  INFO 5476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2018-10-10 17:49:50.619  INFO 5476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2018-10-10 17:49:50.620  INFO 5476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2018-10-10 17:49:50.620  INFO 5476 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webStatFilter' to urls: [/*]
+2018-10-10 17:49:51.452  INFO 5476 --- [main] springboot.config.ExecutorConfig         : start asyncServiceExecutor
+2018-10-10 17:49:51.455  INFO 5476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 
+2018-10-10 17:49:51.462  INFO 5476 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService  'asyncServiceExecutor'
+2018-10-10 17:49:51.861  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2333bf6d: startup date [Wed Oct 10 17:49:48 CST 2018]; root of context hierarchy
+2018-10-10 17:49:51.916  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/eventTest]}" onto public java.lang.String springboot.web.EventTestController.eventTest(java.lang.String)
+2018-10-10 17:49:51.917  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/rabbitMQ]}" onto public java.lang.String springboot.web.RabbitMQTestController.test(java.lang.String)
+2018-10-10 17:49:51.918  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest]}" onto public java.lang.String springboot.web.RedisTestController.test1(java.lang.String,java.lang.String)
+2018-10-10 17:49:51.918  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest2]}" onto public java.lang.String springboot.web.RedisTestController.test2(java.lang.String,java.lang.String,java.lang.Long)
+2018-10-10 17:49:51.918  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest3]}" onto public java.lang.String springboot.web.RedisTestController.test3(java.lang.String,java.lang.String,java.lang.Double)
+2018-10-10 17:49:51.918  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest4]}" onto public java.lang.Object springboot.web.RedisTestController.test4(java.lang.String,java.lang.Double,java.lang.Double,java.lang.String)
+2018-10-10 17:49:51.919  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redisTest5]}" onto public java.lang.Object springboot.web.RedisTestController.test5(java.lang.String,long,long,java.lang.String)
+2018-10-10 17:49:51.919  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userTest]}" onto public java.lang.String springboot.web.UserController.queryUser(java.lang.String)
+2018-10-10 17:49:51.919  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/userObjTest]}" onto public springboot.dto.User springboot.web.UserController.queryUserObj(java.lang.String)
+2018-10-10 17:49:51.922  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2018-10-10 17:49:51.922  INFO 5476 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2018-10-10 17:49:51.960  INFO 5476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 17:49:51.960  INFO 5476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 17:49:52.005  INFO 5476 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2018-10-10 17:49:52.713  WARN 5476 --- [main] arterDeprecationWarningAutoConfiguration : spring-boot-starter-redis is deprecated as of Spring Boot 1.4, please migrate to spring-boot-starter-data-redis
+2018-10-10 17:49:52.938  INFO 5476 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2018-10-10 17:49:52.938  INFO 5476 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'druidDataSource' has been autodetected for JMX exposure
+2018-10-10 17:49:52.945  INFO 5476 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'connectionFactory' has been autodetected for JMX exposure
+2018-10-10 17:49:52.948  INFO 5476 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'connectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=connectionFactory,type=CachingConnectionFactory]
+2018-10-10 17:49:52.964  INFO 5476 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Located MBean 'druidDataSource': registering with JMX server as MBean [com.alibaba.druid.pool:name=druidDataSource,type=DruidDataSource]
+2018-10-10 17:49:52.985  INFO 5476 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2018-10-10 17:49:52.985  INFO 5476 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2018-10-10 17:49:53.587  INFO 5476 --- [SimpleAsyncTaskExecutor-1] o.s.a.r.c.CachingConnectionFactory       : Created new connection: connectionFactory#191316f7:0/SimpleConnection@213e4b9a [delegate=amqp://guest@127.0.0.1:5672/, localPort= 52559]
+2018-10-10 17:49:54.128  INFO 5476 --- [SimpleAsyncTaskExecutor-1] s.eventListener.EventListenerTest        : 消费消息：topic？
+2018-10-10 17:49:54.135  INFO 5476 --- [SimpleAsyncTaskExecutor-1] s.eventListener.EventListenerTest        : 消费消息：topic？
+2018-10-10 17:49:54.139  INFO 5476 --- [SimpleAsyncTaskExecutor-1] s.eventListener.EventListenerTest        : 消费消息：topic？
+2018-10-10 17:49:54.147  INFO 5476 --- [SimpleAsyncTaskExecutor-1] s.eventListener.EventListenerTest        : 消费消息：topic？
+2018-10-10 17:49:54.160  INFO 5476 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8004 (http)
+2018-10-10 17:49:54.164  INFO 5476 --- [main] springboot.App                           : Started App in 6.325 seconds (JVM running for 6.619)
