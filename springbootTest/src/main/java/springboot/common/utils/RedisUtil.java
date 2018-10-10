@@ -18,7 +18,6 @@ import org.springframework.stereotype.Service;
 public class RedisUtil {
     @Autowired
     private RedisTemplate redisTemplate;
-
     /**
      * 写入缓存
      * @param key
